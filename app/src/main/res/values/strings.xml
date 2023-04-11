@@ -1,3 +1,8 @@
 <resources>
     <string name="app_name">GoogleSignIn</string>
+    <string name="user_name">User Name</string>
+    <string name="sign_in">Sign In</string>
+    <string name="password">password</string>
+    <string name="forget_password">Forget Password?</string>
+    <string name="or_sign_in_with">or Sign In with</string>
 </resources>
