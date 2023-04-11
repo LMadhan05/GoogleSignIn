@@ -11,6 +11,7 @@
     >
 
     <TextView
+        android:id="@+id/sign_in"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginBottom="40dp"
@@ -29,9 +30,10 @@
         android:layout_height="wrap_content"
         >
         <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/user_name"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="@string/user_name"
+            android:hint="@string/user_name_email"
             android:fontFamily="times new roman"
             android:textColor="@color/black"
             >
@@ -46,9 +48,11 @@
         android:layout_height="wrap_content"
         >
         <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/password"
+
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="@string/password"
+            android:hint="@string/password"
             android:fontFamily="times new roman"
             android:textColor="@color/black"
             android:layout_marginTop="10dp"
@@ -59,16 +63,28 @@
 
     </com.google.android.material.textfield.TextInputLayout>
 
+    <ProgressBar
+        android:layout_marginTop="15dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        android:id="@+id/progress"
+        >
+
+    </ProgressBar>
+
     <Button
+        android:id="@+id/login"
         android:layout_marginTop="30dp"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="login"
+        android:text="@string/login"
         >
 
     </Button>
 
     <TextView
+        android:id="@+id/forget"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="7dp"
@@ -83,7 +99,9 @@
 
 
 
+
     <ImageView
+        android:id="@+id/google"
         android:layout_marginTop="100dp"
         android:layout_width="50dp"
         android:layout_height="50dp"
@@ -91,8 +109,9 @@
         >
 
     </ImageView>
-    <TextView
 
+    <TextView
+        android:id="@+id/sign_with"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="10dp"
